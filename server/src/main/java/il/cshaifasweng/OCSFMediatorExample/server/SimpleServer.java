@@ -90,7 +90,7 @@ public class SimpleServer extends AbstractServer {
                 sendToAllClients("client 2 won");
             }
             int draw = checkDraw();
-            if (draw == 1) {
+            if (draw == 1 && winner==0) {
                 sendToAllClients("draw");
             }
         } else if (msgString.startsWith("topMid")) {
@@ -116,7 +116,7 @@ public class SimpleServer extends AbstractServer {
                 sendToAllClients("client 2 won");
             }
             int draw = checkDraw();
-            if (draw == 1) {
+            if (draw == 1 && winner==0) {
                 sendToAllClients("draw");
             }
         } else if (msgString.startsWith("topRight")) {
@@ -142,7 +142,7 @@ public class SimpleServer extends AbstractServer {
                 sendToAllClients("client 2 won");
             }
             int draw = checkDraw();
-            if (draw == 1) {
+            if (draw == 1 && winner==0) {
                 sendToAllClients("draw");
             }
 
@@ -169,7 +169,7 @@ public class SimpleServer extends AbstractServer {
                 sendToAllClients("client 2 won");
             }
             int draw = checkDraw();
-            if (draw == 1) {
+            if (draw == 1 && winner==0) {
                 sendToAllClients("draw");
             }
 
@@ -196,7 +196,7 @@ public class SimpleServer extends AbstractServer {
                 sendToAllClients("client 2 won");
             }
             int draw = checkDraw();
-            if (draw == 1) {
+            if (draw == 1 && winner==0) {
                 sendToAllClients("draw");
             }
 
@@ -223,7 +223,7 @@ public class SimpleServer extends AbstractServer {
                 sendToAllClients("client 2 won");
             }
             int draw = checkDraw();
-            if (draw == 1) {
+            if (draw == 1 && winner==0) {
                 sendToAllClients("draw");
             }
 
@@ -250,7 +250,7 @@ public class SimpleServer extends AbstractServer {
                 sendToAllClients("client 2 won");
             }
             int draw = checkDraw();
-            if (draw == 1) {
+            if (draw == 1 && winner==0) {
                 sendToAllClients("draw");
             }
 
@@ -277,7 +277,7 @@ public class SimpleServer extends AbstractServer {
                 sendToAllClients("client 2 won");
             }
             int draw = checkDraw();
-            if (draw == 1) {
+            if (draw == 1&& winner==0) {
                 sendToAllClients("draw");
             }
 
@@ -304,7 +304,7 @@ public class SimpleServer extends AbstractServer {
                 sendToAllClients("client 2 won");
             }
             int draw = checkDraw();
-            if (draw == 1) {
+            if (draw == 1 && winner==0) {
                 sendToAllClients("draw");
             }
 
