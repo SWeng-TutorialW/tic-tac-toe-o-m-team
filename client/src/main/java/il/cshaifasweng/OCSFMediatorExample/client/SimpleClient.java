@@ -15,6 +15,10 @@ public class SimpleClient extends AbstractClient {
 		super(host, port);
 	}
 
+	public static SimpleClient getClient() {
+		return client;
+	}
+
 	@Override
 	protected void handleMessageFromServer(Object msg) {
 		String message = msg.toString();
@@ -165,9 +169,9 @@ public class SimpleClient extends AbstractClient {
 
 	}
 	
-	public static SimpleClient getClient() {
+	public static SimpleClient getClient(String ip , int port) {
 		if (client == null) {
-			client = new SimpleClient("localhost", 4001);
+			client = new SimpleClient(ip, port);
 		}
 		return client;
 	}

@@ -25,15 +25,29 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
     	EventBus.getDefault().register(this);
-    	client = SimpleClient.getClient();
-    	client.openConnection();
-        scene = new Scene(loadFXML("primary"), 480, 480);
-        stage.setScene(scene);
-        stage.show();
+
+        // Load the connection UI first
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("secondary.fxml"));
+        Parent root = loader.load();
+
+        Stage connectStage = new Stage();
+        connectStage.setTitle("Connect to Server");
+        connectStage.setScene(new Scene(root));
+        connectStage.show();
+
     }
 
     static void setRoot(String fxml) throws IOException {
         scene.setRoot(loadFXML(fxml));
+    }
+
+    public static void launchPrimaryUI() throws IOException {
+        FXMLLoader loader = new FXMLLoader(App.class.getResource("primary.fxml"));
+        Parent root = loader.load();
+        Stage stage = new Stage();
+        scene = new Scene(root, 480, 480);
+        stage.setScene(scene);
+        stage.show();
     }
 
     private static Parent loadFXML(String fxml) throws IOException {
