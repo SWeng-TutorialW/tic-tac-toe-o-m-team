@@ -7,24 +7,18 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="246.0" prefWidth="422.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="il.cshaifasweng.OCSFMediatorExample.client.SecondaryController">
    <children>
-      <Label layoutX="67.0" layoutY="109.0" text="port:">
+      <Label layoutX="112.0" layoutY="109.0" text="port:">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <Button fx:id="connectButton" layoutX="153.0" layoutY="160.0" mnemonicParsing="false" onAction="#switchToPrimary" text="connect" textFill="#12e939">
+      <Button fx:id="connectButton" layoutX="153.0" layoutY="180.0" mnemonicParsing="false" onAction="#switchToPrimary" text="connect" textFill="#12e939">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
-      <Label layoutX="117.0" layoutY="109.0" text="4001">
-         <font>
-            <Font name="System Bold Italic" size="18.0" />
-         </font>
-      </Label>
       <Label layoutX="67.0" layoutY="68.0" text="Ip address:">
          <font>
             <Font size="18.0" />
@@ -36,5 +30,7 @@
          </font>
       </Text>
       <TextField fx:id="ipText" layoutX="159.0" layoutY="69.0" prefHeight="25.0" prefWidth="159.0" />
+      <TextField fx:id="port" layoutX="159.0" layoutY="111.0" prefHeight="25.0" prefWidth="159.0" />
+      <Text fill="RED" layoutX="67.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="note:if you want to play X/O enter port = 4001" wrappingWidth="250.70184326171875" />
    </children>
 </AnchorPane>
